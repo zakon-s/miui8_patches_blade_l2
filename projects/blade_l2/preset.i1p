@@ -1,0 +1,7 @@
+# delete ~/path_to_file_or_dir~;
+# copy ~/curent_path_to_file_or_dir~ ~/final_path_to_file_or_dir~;
+# move ~/curent_path_to_file_or_dir~ ~/final_path_to_file_or_dir~;
+# replace ~/path_to_file~ ~search_string~ ~replace_string~;
+# append ~/path_to_file~ ~append_string~;
+# addtohead ~/path_to_file~ ~addtohead_string~;
+# runscript ~/path_to_script_or_args~;

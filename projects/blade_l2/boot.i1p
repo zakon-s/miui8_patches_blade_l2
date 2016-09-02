@@ -1,0 +1,19 @@
+# clean
+delete ~%here%/boot/boot-tool/boot~;
+delete ~%here%/boot/boot-tool/boot.img~;
+
+# unpack
+copy ~%rom%/boot.img~ ~%here%/boot/boot-tool/boot.img~;
+runscript ~call %here%/boot/boot-tool/unpack.bat ~%here%/boot/boot-tool/boot.img~;
+
+# edit
+copy ~%here%/boot/kernel~ ~%here%/boot/boot-tool/boot/boot.img-kernel~;
+copy ~%here%/boot/ramdisk~ ~%here%/boot/boot-tool/boot/ramdisk~;
+
+# pack
+runscript ~call %here%/boot/boot-tool/repack.bat ~%here%/boot/boot-tool/boot~;
+copy ~%here%/boot/boot-tool/new_boot.img~ ~%rom%/boot.img~;
+
+# clean
+delete ~%here%/boot/boot-tool/boot~;
+delete ~%here%/boot/boot-tool/boot.img~;

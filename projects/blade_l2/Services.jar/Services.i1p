@@ -1,0 +1,2 @@
+# Fix mount
+copy ~%here%/server~ ~%smali%/com/android/server~;
